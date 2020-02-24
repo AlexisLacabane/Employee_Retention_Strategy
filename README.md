@@ -10,13 +10,19 @@
 
 HR Team from ABC company works on better anticipating unplanned leave or retirement in its Parisian workforce
 
-This repo contains a https://slides.com presentation a file_folder: **Code.py** to optimise the following:
+This repo contains a https://slides.com presentation a :file_folder: **Code.py** to optimise the following:
 
 - clean the dataset from Kaggle
         :file_folder: **Employee_Attrition.csv**
 - analyse and determine a fitting basic model (Logistic Regression in this case)
 
 ## :bowtie: Presentation :bowtie:
+
+<p>
+<button class="bcls-button" onclick="playVideo()">Play Video</button>
+
+<button class="bcls-button" onclick="pauseVideo()">Pause Video</button>
+</p>
 
 <iframe src="https://slides.com/alexislacabane/deck-71f64a/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
