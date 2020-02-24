@@ -4,7 +4,7 @@
 
 ![](/Media/P_logo.png)
 ![](/Media/Spyder_logo.png)
-![](/Media/slides_com.png)
+![](/Media/slide_com.png)
 
 ## Purpose
 
@@ -20,8 +20,6 @@ This repo contains a https://slides.com presentation a file_folder: **Code.py** 
 
 <iframe src="https://slides.com/alexislacabane/deck-71f64a/embed" width="576" height="420" scrolling="no" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
 
-https://slides.com/alexislacabane/deck-71f64a
-
 ## Conclusion
 Key take aways: 
 
@@ -34,4 +32,5 @@ Key take aways:
 ## Credits
 
 Kaggle - https://www.kaggle.com/patelprashant/employee-attrition 
+
 Pavan Raj - https://www.kaggle.com/pavanraj159/telecom-customer-churn-prediction
