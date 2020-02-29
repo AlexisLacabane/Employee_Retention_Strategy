@@ -90,7 +90,7 @@ layout = go.Layout(dict(title = "Variable Summary"))
 figure = go.Figure(data=[trace],layout=layout)
 py.iplot(figure)
 
-# Variables violinplots
+# Numerical Variables violinplots
 
 sns.set()
 fig, axes=plt.subplots(nrows=4, ncols=4, figsize=(15,15))
@@ -101,6 +101,30 @@ for idx, feat in enumerate(df.drop(['Attrition', 'EmployeeNumber','DistanceFromH
     ax.set_ylabel(feat)
 fig.tight_layout();
 
+# Categorical Variables violinplots
+var=df.groupby(['JobLevel','Attrition']).Attrition.count()
+var.unstack().plot(kind='bar',stacked=True,color=['blue','orange'],grid=False,figsize=(10,10))
+plt.show()
+
+var=df.groupby(['StockOptionLevel','Attrition']).Attrition.count()
+var.unstack().plot(kind='bar',stacked=True,color=['blue','orange'],grid=False,figsize=(10,10))
+plt.show()
+
+var=df.groupby(['BusinessTravel','Attrition']).Attrition.count()
+var.unstack().plot(kind='bar',stacked=True,color=['blue','orange'],grid=False,figsize=(10,10))
+plt.show()
+
+var=df.groupby(['OverTime','Attrition']).Attrition.count()
+var.unstack().plot(kind='bar',stacked=True,color=['blue','orange'],grid=False,figsize=(10,10))
+plt.show()
+
+var=df.groupby(['Age_bins','Attrition']).Attrition.count()
+var.unstack().plot(kind='bar',stacked=True,color=['blue','orange'],grid=False,figsize=(10,10))
+plt.show()
+
+var=df.groupby(['WorkLifeBalance','Attrition']).Attrition.count()
+var.unstack().plot(kind='bar',stacked=True,color=['blue','orange'],grid=False,figsize=(10,10))
+plt.show()
 
 # Test VIF for mutlticolinearity
 X = df.drop(['Attrition','EmployeeNumber','YearsAtCompany','PercentSalaryHike','TotalWorkingYears','JobInvolvement','WorkLifeBalance','Department_Research & Development'], axis=1)
